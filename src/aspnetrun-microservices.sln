@@ -3,9 +3,40 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33122.133
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{580B767F-EDC2-4915-B211-1BD9337C0FF2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalog", "Catalog", "{EAA43FB3-CF6B-4810-96C4-11A7560F573D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Catalog.API", "Services\Catalog\Catalog.API\Catalog.API.csproj", "{E514F9E4-918F-47E8-835D-1500199A5320}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{562DBD2E-D433-493B-AE15-FE18A49E25A5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E2D8A04F-A08B-41BC-9BF9-643DA5883EEE}"
+	ProjectSection(SolutionItems) = preProject
+		docker-commands.txt = docker-commands.txt
+	EndProjectSection
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E514F9E4-918F-47E8-835D-1500199A5320}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E514F9E4-918F-47E8-835D-1500199A5320}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E514F9E4-918F-47E8-835D-1500199A5320}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E514F9E4-918F-47E8-835D-1500199A5320}.Release|Any CPU.Build.0 = Release|Any CPU
+		{562DBD2E-D433-493B-AE15-FE18A49E25A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{562DBD2E-D433-493B-AE15-FE18A49E25A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{562DBD2E-D433-493B-AE15-FE18A49E25A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{562DBD2E-D433-493B-AE15-FE18A49E25A5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EAA43FB3-CF6B-4810-96C4-11A7560F573D} = {580B767F-EDC2-4915-B211-1BD9337C0FF2}
+		{E514F9E4-918F-47E8-835D-1500199A5320} = {EAA43FB3-CF6B-4810-96C4-11A7560F573D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F051AAFE-2A5E-426E-8304-29D3783F1F1E}
