@@ -1,4 +1,5 @@
 using Discount.API.Extensions;
+using Discount.API.Repositories;
 
 namespace Discount.API
 {
@@ -14,6 +15,7 @@ namespace Discount.API
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+            builder.Services.AddScoped<IDiscountRepository, IDiscountRepository>();
 
             var app = builder.Build();
 
